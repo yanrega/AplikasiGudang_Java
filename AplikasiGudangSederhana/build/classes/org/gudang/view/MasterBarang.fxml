@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gudang.controller.MasterBarangController">
+   <children>
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnKembali" text="Kembali" />
+      <TableView fx:id="tabelBarangTV" layoutX="130.0" layoutY="92.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="idTC" prefWidth="75.0" text="Id Barang" />
+          <TableColumn fx:id="namaBarangTC" prefWidth="91.0" text="Nama Barang" />
+            <TableColumn fx:id="jBarangTC" prefWidth="101.0" text="Jumlah Barang" />
+            <TableColumn fx:id="satuanTC" prefWidth="73.0" text="Satuan" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

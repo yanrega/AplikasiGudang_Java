@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gudang.controller.PenerimaanBarangController">
+   <children>
+      <Label layoutX="67.0" layoutY="74.0" text="Id Barang" />
+      <Label layoutX="67.0" layoutY="105.0" text="Id Staff" />
+      <Label layoutX="67.0" layoutY="138.0" text="Jumlah Barang" />
+      <Label layoutX="67.0" layoutY="169.0" text="Tanggal" />
+      <Label layoutX="67.0" layoutY="200.0" text="Satuan" />
+      <TextField fx:id="idBarangTF" layoutX="181.0" layoutY="70.0" />
+      <TextField fx:id="idStaffTF" layoutX="181.0" layoutY="101.0" />
+      <TextField fx:id="jBarangTF" layoutX="181.0" layoutY="134.0" />
+      <DatePicker fx:id="tanggalTF" layoutX="181.0" layoutY="165.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="idBarangL" layoutX="372.0" layoutY="74.0" prefHeight="17.0" prefWidth="137.0" />
+      <Label fx:id="idStaffL" layoutX="372.0" layoutY="105.0" prefHeight="17.0" prefWidth="137.0" />
+      <Label fx:id="jlhBarangL" layoutX="372.0" layoutY="138.0" prefHeight="17.0" prefWidth="137.0" />
+      <Label fx:id="tanggalL" layoutX="372.0" layoutY="169.0" prefHeight="17.0" prefWidth="137.0" />
+      <Label fx:id="satuanL" layoutX="372.0" layoutY="200.0" prefHeight="17.0" prefWidth="137.0" />
+      <Label layoutX="46.0" layoutY="30.0" text="Penerimaan Barang" />
+      <Button layoutX="534.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnSimpan" text="Simpan" />
+      <Button layoutX="469.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnBatal" text="Batal" />
+      <Label fx:id="suksesL" layoutX="46.0" layoutY="351.0" prefHeight="44.0" prefWidth="413.0" textFill="RED" />
+      <ComboBox fx:id="satuanCB" layoutX="181.0" layoutY="196.0" prefWidth="150.0" promptText="Satuan" />
+      <Hyperlink layoutX="469.0" layoutY="27.0" onAction="#btnBarang" text="Data Barang" />
+      <Hyperlink layoutX="382.0" layoutY="27.0" onAction="#btnStaff" text="Data Staff" />
+   </children>
+</AnchorPane>

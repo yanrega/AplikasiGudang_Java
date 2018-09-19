@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gudang.controller.DataReservasiController">
+   <children>
+      <TableView fx:id="tabelReservasiTV" layoutX="78.0" layoutY="81.0" prefHeight="198.0" prefWidth="480.0">
+        <columns>
+          <TableColumn fx:id="idReservasiTV" prefWidth="91.0" text="Id Reservasi" />
+          <TableColumn fx:id="idBarangTV" prefWidth="73.0" text="Id Barang" />
+            <TableColumn fx:id="jlhBarangTV" prefWidth="107.0" text="Jumlah Barang" />
+            <TableColumn fx:id="satuanTV" prefWidth="70.0" text="Satuan" />
+            <TableColumn fx:id="statusTV" prefWidth="65.0" text="Status" />
+            <TableColumn fx:id="tujuanTV" prefWidth="75.0" text="Tujuan" />
+        </columns>
+      </TableView>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnKembali" text="Kembali" />
+   </children>
+</AnchorPane>

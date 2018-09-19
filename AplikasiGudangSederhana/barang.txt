@@ -1,0 +1,13 @@
+Executed SQL Statement : Create table `gudang`.`Barang`(  
+  `kodebarang` text NOT NULL,
+  `namabarang` text,
+  `kodekonsumen` text,
+  `namakonsumen` text,
+  `kodearea` text,
+  `namaarea` text,
+  `tanggalmasuk` date,
+  `jumlahbarang` int,
+  primary key (`kodebarang`)
+) 
+Error Number : 1170 
+Error Message: BLOB/TEXT column 'kodebarang' used in key specification without a key length 

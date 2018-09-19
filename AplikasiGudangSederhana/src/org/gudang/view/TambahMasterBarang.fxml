@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gudang.controller.TambahMasterBarangController">
+    <children>
+        <Label layoutX="27.0" layoutY="26.0" text="Update Master Barang" />
+        <Label layoutX="34.0" layoutY="91.0" text="Nama Barang" />
+        <TextField fx:id="namaBarangM" layoutX="158.0" layoutY="87.0" />
+        <Button layoutX="537.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnSimpanBarang" text="Tambah" />
+        <Button layoutX="489.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnBatal" text="Batal" />
+      <Label fx:id="labelNamaBarang" layoutX="350.0" layoutY="91.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="suksesL" layoutX="27.0" layoutY="353.0" prefWidth="149.0" />
+      <Label layoutX="34.0" layoutY="148.0" text="Jumlah Barang" />
+      <TextField fx:id="jumlahBarangM" layoutX="158.0" layoutY="144.0" />
+      <Label fx:id="labelJumlahBarang" layoutX="349.0" layoutY="148.0" prefWidth="149.0" textFill="RED" />
+      <Label layoutX="35.0" layoutY="120.0" text="Satuan" />
+      <Label fx:id="labelSatuanBarang" layoutX="349.0" layoutY="120.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Hyperlink layoutX="489.0" layoutY="23.0" onAction="#btnmasterDataHL" text="Master Data" />
+      <Label fx:id="labelSukses" layoutX="27.0" layoutY="353.0" prefHeight="17.0" prefWidth="110.0" />
+      <ComboBox fx:id="satuanCB" layoutX="158.0" layoutY="116.0" prefWidth="150.0" promptText="Satuan" />
+    </children>
+</AnchorPane>

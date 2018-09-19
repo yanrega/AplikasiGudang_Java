@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="org.gudang.controller.DataStaffController">
+   <children>
+      <TableView fx:id="tabelStaff" layoutX="53.0" layoutY="84.0" prefHeight="210.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="idTC" prefWidth="57.0" text="Id Staff" />
+          <TableColumn fx:id="namaTC" prefWidth="125.0" text="Nama" />
+            <TableColumn fx:id="nohpTC" prefWidth="82.0" text="No. Hp" />
+            <TableColumn fx:id="alamatTC" prefWidth="88.0" text="Alamat" />
+            <TableColumn fx:id="usernameTC" prefWidth="141.0" text="Username" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnKembali" text="Kembali" />
+   </children>
+</AnchorPane>
